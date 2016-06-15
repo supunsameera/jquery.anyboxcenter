@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+ <script src="../js/anyDivCeneter.jQuery.js"></script>
+<style>
+	
+</style>
+</head>
+<body>
+
+	<div id="centerBox" class="centerBox">
+		
+	</div>
+
+
+	<script>
+		$(function(){
+			$('#centerBox').anyBoxCenter({
+	            boxheight:300,
+	            boxwidth:400,
+				boxColor:'#3e3e3e',
+	            wrapColor:'#ccc',
+	            contColor:'#cecece',
+	            wrapPadding:'4px',
+	            borderRadius:'0',
+	            border:'1px solid #2e2e2e',
+	            boxShadow:'0 0 10px 0 #01f',
+	            zIndex:'9999'
+			});
+		});
+	</script>
+
+	</body>
+	</html>
