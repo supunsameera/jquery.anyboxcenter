@@ -1,6 +1,7 @@
 
+
 (function($){
-    $.fn.anyBoxCenter=function(options){
+    $.fn.anyElementCeneter=function(options){
             var defaults={
             boxColor:'#3e3e3e',
             wrapColor:'#ccc',
