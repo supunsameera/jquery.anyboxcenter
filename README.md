@@ -106,7 +106,7 @@ This simple plugin helps you centralize your DOM element against their parent el
       $('#centerBox').anyElementCeneter({
 	            boxheight:300,
 	            boxwidth:400,
-		    boxColor:'#3e3e3e',
+	            boxColor:'#3e3e3e',
 	            wrapColor:'#ccc',
 	            contColor:'#cecece',
 	            wrapPadding:'4px',
