@@ -8,11 +8,6 @@ This simple plugin helps you centralize your DOM element against their parent el
  - Please see demo/demo.html
 
 
-## Documentation
-
-
-
-
 ## Requires
   - jQuery 1.2.6+
 
@@ -41,67 +36,67 @@ This simple plugin helps you centralize your DOM element against their parent el
 ## Options
 
 #### boxheight
-  - description: the element that the DOM element centralize against to
-  - data type: int
-  - default value: 'window'
-  - possible value: 'window', 'parent', or '.someTarget'
+  - description: element height that we want to centralized
+  - data type: integer
+  - default value: 300
+  - possible value: any integer value
 
 #### boxwidth
-  - description: you can specify the top of the target element
+  - description: element width that we want to centralized
   - data type: integer
-  - default value: false
-  - possible value: 13, 20, 36 ... any number you want
+  - default value: 400
+  - possible value: any integer value
 
 #### boxColor
-  - description: or specify the top in percentage of the target element
-  - data type: float
-  - default value: 0.5
-  - possible value: 0.1, 0.4, 0.8 ...
+  - description: element background color
+  - data type: string
+  - default value: '#3e3e3e'
+  - possible value: 'any hash color or rgb color'
 
 #### wrapColor
-  - description: center on window resize
-  - data type: boolean
-  - default value: true
-  - possible value: true | false
-  - 
+  - description: element wrapper background color
+  - data type: string
+  - default value: '#ccc'
+  - possible value: 'any hash color or rgb color'
+  
   
 #### contColor
-  - description: center on window resize
-  - data type: boolean
-  - default value: true
-  - possible value: true | false
+  - description: element container background color
+  - data type: string
+  - default value: '#cecece'
+  - possible value:'any hash color or rgb color'
   
  
 #### wrapPadding
-  - description: center on window resize
-  - data type: boolean
-  - default value: true
-  - possible value: true | false
+  - description: element wrapper padding
+  - data type: string
+  - default value: '4px'
+  - possible value: 'any value for padding'
 
 
 #### borderRadius
-  - description: center on window resize
-  - data type: boolean
+  - description: element wrapper border radius
+  - data type: string
   - default value: true
-  - possible value: true | false
+  - possible value: 'any value for radius'
 
 #### border
-  - description: center on window resize
-  - data type: boolean
-  - default value: true
-  - possible value: true | false
+  - description: element wrapper border
+  - data type: string
+  - default value: '1px solid #2e2e2e'
+  - possible value: 'any value for border'
 
 #### boxShadow
-  - description: center on window resize
-  - data type: boolean
-  - default value: true
-  - possible value: true | false
+  - description: element wrapper box shadow
+  - data type: string
+  - default value: '0 0 10px 0 #000'
+  - possible value: 'any value for box shadow'
 
 #### zIndex
-  - description: center on window resize
-  - data type: boolean
-  - default value: true
-  - possible value: true | false
+  - description: element container z-index
+  - data type: string
+  - default value: '9999'
+  - possible value: any value for z-index
   
 
 ## Usage
@@ -111,7 +106,7 @@ This simple plugin helps you centralize your DOM element against their parent el
       $('#centerBox').anyElementCeneter({
 	            boxheight:300,
 	            boxwidth:400,
-							boxColor:'#3e3e3e',
+		    boxColor:'#3e3e3e',
 	            wrapColor:'#ccc',
 	            contColor:'#cecece',
 	            wrapPadding:'4px',
@@ -119,7 +114,7 @@ This simple plugin helps you centralize your DOM element against their parent el
 	            border:'1px solid #2e2e2e',
 	            boxShadow:'0 0 10px 0 #01f',
 	            zIndex:'9999'
-			});
+		});
 
 
 ## License
